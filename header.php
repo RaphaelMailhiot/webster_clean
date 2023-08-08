@@ -50,14 +50,14 @@
          <li <?php if ($_GET["page"] === "accueil"): ?> class="active" <?php endif;?>><a href="<?PHP echo $url ?>">Accueil</a></li>
             <li <?php if ($_GET["page"] === "a-propos"): ?> class="active" <?php endif;?>><a href="#">A Propos<i class="fa fa-angle-down fa-indicator"></i></a>
               <ul class="drop-down-multilevel left-side">
-                <li><a href="<?PHP echo $url ?>a-propos/">À Propos</a></li>
+                <li><a href="<?PHP echo $url ?>a-propos">À Propos</a></li>
                 <li><a href="<?PHP echo $url ?>a-propos/#">Mettre une page</a></li>
                 <li><a href="<?PHP echo $url ?>a-propos/#">Mettre une page</a></li>
               </ul>
             </li>
-         <li <?php if ($_GET["page"] === "services"): ?> class="active" <?php endif;?>><a href="<?PHP echo $url ?>services/">Services</a></li>
-         <li <?php if ($_GET["page"] === "realisations"): ?> class="active" <?php endif;?>><a href="<?PHP echo $url ?>realisations/">Réalisations</a></li>
-         <li <?php if ($_GET["page"] === "contact"): ?> class="active" <?php endif;?>><a href="<?PHP echo $url ?>contact/">Contact</a></li>
+         <li <?php if ($_GET["page"] === "services"): ?> class="active" <?php endif;?>><a href="<?PHP echo $url ?>services">Services</a></li>
+         <li <?php if ($_GET["page"] === "realisations"): ?> class="active" <?php endif;?>><a href="<?PHP echo $url ?>realisations">Réalisations</a></li>
+         <li <?php if ($_GET["page"] === "contact"): ?> class="active" <?php endif;?>><a href="<?PHP echo $url ?>contact">Contact</a></li>
 
         </ul>
         

@@ -49,6 +49,9 @@ include("lang/" . $lang . ".php");
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/responsive.css">
 
+    <!-- Style customizer -->
+    <link rel="stylesheet" type="text/css" href="<?PHP echo $url ?>css/skins/skin-yellow.css" data-style="styles"/>
+
     <!-- jquery -->
     <script src="<?PHP echo $url ?>js/jquery-3.6.0.min.js"></script>
 
