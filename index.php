@@ -35,19 +35,19 @@ include("lang/" . $lang . ".php");
           rel="stylesheet">
 
     <!-- Plugins -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/plugins-css.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/plugins-css.min.css">
 
     <!-- Typography -->
     <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/typography.css">
 
     <!-- Shortcodes -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/shortcodes/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/shortcodes/shortcodes.min.css">
 
     <!-- Style -->
     <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/style.css">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/responsive.min.css">
 
     <!-- Style customizer -->
     <link rel="stylesheet" type="text/css" href="<?PHP echo $url ?>css/skins/skin-yellow.css" data-style="styles"/>
