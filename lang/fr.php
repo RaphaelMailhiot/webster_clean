@@ -34,7 +34,15 @@ $meta['contact-send'][2] ="contacter, contact,";
 $meta['contact-send'][3] ="contact-send/";
 
 
-if ($page=="seo"){  
+$province=$_GET['province'];
+$town=$_GET['town'];
+$service=$_GET['service'];
+$townclean = str_replace('-', ' ', $town);
+$serviceclean = str_replace('-', ' ', $service);
+$valueclean = str_replace('-', ' ', $value);
+
+
+if ($page=="seo-1"){
 $titre ="SEO ".$town."- $namebase";
 $description ="SEO à ".$town." $namebase. $descriptionbasefr" ;
 $keywords = "$keywordsbasefr, $namebase".$town.",";

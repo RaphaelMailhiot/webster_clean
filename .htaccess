@@ -25,21 +25,21 @@ AddOutputFilterByType DEFLATE application/x-javascript
 ErrorDocument 404 UrlDuSite
 
 RewriteRule ^$ index.php?lang=fr&page=accueil
-RewriteRule ^en/$ index.php?lang=en&page=accueil
+RewriteRule ^en$ index.php?lang=en&page=accueil
 
-RewriteRule ^a-propos/$ index.php?lang=fr&page=a-propos
-RewriteRule ^en/about/$ index.php?lang=en&page=a-propos
+RewriteRule ^a-propos$ index.php?lang=fr&page=a-propos
+RewriteRule ^en/about$ index.php?lang=en&page=a-propos
 
-RewriteRule ^services/$ index.php?lang=fr&page=services
-RewriteRule ^en/services/$ index.php?lang=en&page=services
+RewriteRule ^services$ index.php?lang=fr&page=services
+RewriteRule ^en/services$ index.php?lang=en&page=services
 
-RewriteRule ^realisations/$ index.php?lang=fr&page=realisations
-RewriteRule ^en/achievements/$ index.php?lang=en&page=realisations
+RewriteRule ^realisations$ index.php?lang=fr&page=realisations
+RewriteRule ^en/achievements$ index.php?lang=en&page=realisations
 
-RewriteRule ^contact/$ index.php?lang=fr&page=contact
-RewriteRule ^en/contact/$ index.php?lang=en&page=contact
+RewriteRule ^contact$ index.php?lang=fr&page=contact
+RewriteRule ^en/contact$ index.php?lang=en&page=contact
 
-RewriteRule ^seo-([a-z-A-Z0-9]+)/$	index.php?lang=fr&page=seo&town=$1	[L]
+RewriteRule ^([a-z-A-Z0-9]+)/([a-z-A-Z0-9]+)$	index.php?lang=fr&page=seo-1&town=$1	[L]
 
 # Disable server signature
 ServerSignature Off
@@ -64,9 +64,7 @@ ServerSignature Off
     ExpiresByType image/svg "access 1 month"
     ExpiresDefault "access 1 month"
 
-
 </IfModule>
-
 
 <IfModule php7_module>
    php_flag display_errors Off

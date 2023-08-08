@@ -28,7 +28,16 @@ $meta['contact'][1] ="Contact an employee of our expert team now.";
 $meta['contact'][2] ="contacter, contact,";
 $meta['contact'][3] ="en/contact/";
 
-if ($page=="template"){  
+
+$province=$_GET['province'];
+$town=$_GET['town'];
+$service=$_GET['service'];
+$townclean = str_replace('-', ' ', $town);
+$serviceclean = str_replace('-', ' ', $service);
+$valueclean = str_replace('-', ' ', $value);
+
+
+if ($page=="seo-1-en"){
 $titre ="SEO ".$category."- $namebase";
 $description ="SEO at ".$category." $namebase. $descriptionbaseen";
 $keywords = "$keywordsbaseen, $namebase".$category.",";
