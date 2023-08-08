@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 xs-mb-10">
-        <div class="topbar-call text-center text-md-left">
+        <div class="topbar-call text-left">
           <ul>
             <li><i class="fa fa-envelope-o theme-color"></i> info@delisoft.ca</li>
              <li><i class="fa fa-phone"></i> <a href="tel:+4503327577"> <span>450-332-7577</span></a></li>
@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="col-lg-6 col-md-6">
-        <div class="topbar-social text-center text-md-right">
+        <div class="topbar-social text-end">
           <ul>
             <li><a aria-label="Facebook" href="#"><span class="ti-facebook"></span></a></li>
             <li><a aria-label="Instagram" href="#"><span class="ti-instagram"></span></a></li>

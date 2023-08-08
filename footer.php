@@ -66,12 +66,12 @@
         </div>
         <div class="footer-widget mt-20">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-8 col-md-6">
                     <p class="mt-15"> &copy;<?PHP echo $namebase ?> <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>
                         | Tous Droits Réservés | <a href="https://delisoft.ca/" target="_blank">Conception Web
                             Delisoft</a></p>
                 </div>
-                <div class="col-lg-6 col-md-6 text-left text-md-right">
+                <div class="col-lg-4 col-md-6 text-end">
                     <div class="footer-widget-social">
                         <ul>
                             <li><a aria-label="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
