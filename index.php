@@ -112,12 +112,12 @@ include("lang/lang.php");
     <!--Pour les Cookies si nécessaire-->
     <!--Ne pas oublier le gtag-->
 
-    <?php /*
-    $cookies = [
+    <?php
+/*    $cookies = [
         'fr' => ['En utilisant ce site Web, vous acceptez notre utilisation des témoins.', 'Refuser', 'Accepter'],
         'en' => ['While using this site, you accept the use of cookies', 'Refuse','Accept']
-    ]; */
-    ?>
+    ];
+    */?>
 
     <!--<div class="cookies-bar js-cookie-consent pt-20 pb-20">
         <div class="container">
@@ -139,8 +139,7 @@ include("lang/lang.php");
         </div>
     </div>
     <div data-site-cookie-name="cookie_for_consent"></div>
-    <div data-site-cookie-lifetime="7300"></div>
-    -->
+    <div data-site-cookie-lifetime="7300"></div>-->
     <!--METTRE L'URL DU SITE AU FORMAT : delisoft.ca (pas de http ou autre)-->
     <!--<div data-site-cookie-domain=""></div>
     <div data-site-session-secure=";secure"></div>-->

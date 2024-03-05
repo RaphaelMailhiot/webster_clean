@@ -1087,9 +1087,9 @@ $(document).ready(function () {
         function consentWithCookies() {
             setCookie(COOKIE_NAME, COOKIE_VALUE, COOKIE_LIFETIME);
 
-            hideCookieDialog();
-
             if (COOKIE_VALUE === 1) consentGranted();
+
+            hideCookieDialog();
         }
 
         function cookieExists(name) {
@@ -1144,9 +1144,15 @@ $(document).ready(function () {
 
 
 function consentGranted() {
-    gtag('consent', 'update', {
-        'analytics_storage': 'granted'
-    });
+    if (typeof gtag === 'function') {
+        // gtag est présent, mise à jour du consentement
+        gtag('consent', 'update', {
+            'analytics_storage': 'granted'
+        });
+    } else {
+        // gtag n'est pas présent, vous pouvez gérer ce cas si nécessaire
+        console.log('gtag n\'est pas présent sur cette page.');
+    }
 }
 
 /****************************************************
