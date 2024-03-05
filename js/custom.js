@@ -1071,3 +1071,84 @@ jarallax(document.querySelectorAll('.jarallax'));
         POTENZA.mobileview();
     });
 })(jQuery);
+
+/****************************************************
+ CODE pour cookies
+ ****************************************************/
+$(document).ready(function () {
+    window.cookieConsent = (function () {
+
+        let COOKIE_VALUE = 0;
+        const COOKIE_NAME = $('div[data-site-cookie-name]').data('site-cookie-name');
+        const COOKIE_DOMAIN = $('div[data-site-cookie-domain]').data('site-cookie-domain');
+        const COOKIE_LIFETIME = $('div[data-site-cookie-lifetime]').data('site-cookie-lifetime');
+        const SESSION_SECURE = $('div[data-site-session-secure]').data('site-session-secure');
+
+        function consentWithCookies() {
+            setCookie(COOKIE_NAME, COOKIE_VALUE, COOKIE_LIFETIME);
+
+            hideCookieDialog();
+
+            if (COOKIE_VALUE === 1) consentGranted();
+        }
+
+        function cookieExists(name) {
+            let result = document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE);
+            if (result == -1)
+                result = document.cookie.split('; ').indexOf(name + '=' + 1);
+
+            return result !== -1;
+        }
+
+        function hideCookieDialog() {
+            $('.js-cookie-consent').hide();
+        }
+
+        function setCookie(name, value, expirationInDays) {
+            const date = new Date();
+            date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+            document.cookie = name + '=' + value
+                + ';expires=' + date.toUTCString()
+                + ';domain=' + COOKIE_DOMAIN
+                + ';path=/' + SESSION_SECURE;
+        }
+
+        if (cookieExists(COOKIE_NAME)) {
+            hideCookieDialog();
+
+            if (document.cookie.split('; ').indexOf(COOKIE_NAME + '=' + 1) !== -1)
+                consentGranted();
+        }
+
+        $(document).on('click', '.js-cookie-consent-agree', function () {
+            COOKIE_VALUE = 1;
+            consentWithCookies();
+        });
+
+        $(document).on('click', '.js-cookie-consent-refuse', function () {
+            consentWithCookies();
+            //removeCookies();
+        });
+
+        $(document).on('click', '.cookie-button-close', function () {
+            hideCookieDialog();
+        });
+
+        return {
+            consentWithCookies: consentWithCookies,
+            hideCookieDialog: hideCookieDialog,
+            cookieExists: cookieExists
+        };
+    })();
+});
+
+
+function consentGranted() {
+    gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+    });
+}
+
+/****************************************************
+ Fin CODE pour cookies
+ ****************************************************/

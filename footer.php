@@ -36,7 +36,7 @@
             </div>
             <div class="col-lg-4 col-sm-6">
                 <h6 class="text-white mb-30 mt-10 text-uppercase">S'inscrire à notre infolettre</h6>
-                <p>Incrinvez-vous à notre infolettre pour recevoir nos nouvelles et nos offres.</p>
+                <p>Inscrivez-vous à notre infolettre pour recevoir nos nouvelles et nos offres.</p>
                 <div class="footer-Newsletter">
                     <div id="mc_embed_signup_scroll">
                         <form action="php/mailchimp-action.php" method="POST" id="mc-embedded-subscribe-form"
@@ -56,7 +56,7 @@
                             </div>
                             <div class="clear">
                                 <button type="submit" name="submitbtn" id="mc-embedded-subscribe"
-                                        class="button button-border mt-20 form-button"> Get notified
+                                        class="button button-border mt-20 form-button"> S'abonner
                                 </button>
                             </div>
                         </form>
@@ -67,7 +67,7 @@
         <div class="footer-widget mt-20">
             <div class="row">
                 <div class="col-lg-8 col-md-6">
-                    <p class="mt-15"> &copy;<?PHP echo $namebase ?> <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear().toString())</script></span>
+                    <p class="mt-15"> &copy;<?PHP echo $namebase ?> <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear().toString()))</script></span>
                         | Tous Droits Réservés | <a href="https://delisoft.ca/" target="_blank">Conception Web Delisoft</a></p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-end">
