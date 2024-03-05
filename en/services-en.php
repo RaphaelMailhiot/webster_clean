@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="page-title-name">
-                    <h1>Nos services</h1>
+                    <h1>Services</h1>
                     <p><?PHP echo $namebase ?></p>
                 </div>
             </div>

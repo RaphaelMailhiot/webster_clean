@@ -1,32 +1,32 @@
-<?PHP
+<?php
 $page = $_GET["page"];
 $lang = $_GET["lang"];
-if ($page == "seo") {
-    $town = $_GET["town"];
-}
 
-$url = "https://z-test2.temoignagesvideo.com/";
+// Mettre l'URL du site
+$url = "https://z-test-raph-delisoft.temoignagesvideo.com/";
 
+// Mettre le nom du site
 $namebase = "NomDeLaCompagnie";
 
 include("lang/" . $lang . ".php");
+include("lang/lang.php");
 ?>
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<?= $lang ?>">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-    <title><?php echo $titre ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title><?= $titre ?></title>
     <meta name="author" content="Delisoft : https://delisoft.ca">
-    <meta name="description" content="<?php echo $description ?>">
-    <meta itemprop="description" content="<?php echo $description ?>">
-    <meta name="keywords" content="<?php echo $keywords ?>">
+    <meta name="description" content="<?= $description ?>">
+    <meta itemprop="description" content="<?= $description ?>">
+    <meta name="keywords" content="<?= $keywords ?>">
 
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?php echo $url ?>images/favicon.ico">
+    <link rel="shortcut icon" href="<?= $url ?>images/favicon.ico">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,27 +35,28 @@ include("lang/" . $lang . ".php");
           rel="stylesheet">
 
     <!-- Plugins -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/plugins-css.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= $url ?>css/plugins-css.min.css">
 
     <!-- Typography -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/typography.css">
+    <link rel="stylesheet" type="text/css" href="<?= $url ?>css/typography.css">
 
     <!-- Shortcodes -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/shortcodes/shortcodes.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= $url ?>css/shortcodes/shortcodes.min.css">
 
     <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= $url ?>css/style.css">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $url ?>css/responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= $url ?>css/responsive.min.css">
 
     <!-- Style customizer -->
-    <link rel="stylesheet" type="text/css" href="<?PHP echo $url ?>css/skins/skin-yellow.css" data-style="styles"/>
+    <link rel="stylesheet" type="text/css" href="<?= $url ?>css/skins/skin-yellow.css" data-style="styles"/>
 
     <!-- jquery -->
-    <script src="<?PHP echo $url ?>js/jquery-3.6.0.min.js"></script>
+    <script src="<?= $url ?>js/jquery-3.6.0.min.js"></script>
 
     <!-- slider revolution -->
+    <!-- SI VOUS NE L'UTILISEZ PAS METTRE EN COMMENTAIRE -->
     <link rel="stylesheet" type="text/css" media="all"
           href="https://revolution.delisoft.ca/revslider/public/assets/css/settings.css">
     <script src="https://revolution.delisoft.ca/revslider/public/assets/js/jquery.themepunch.tools.min.js"></script>
@@ -68,76 +69,45 @@ include("lang/" . $lang . ".php");
 
 <div class="wrapper">
 
-    <!--=================================
-     preloader -->
 
-    <!--<div id="pre-loader">
-        <img src="<?PHP /*echo $url */ ?>images/pre-loader/loader-06.svg" alt="Chargement">
-    </div>-->
+    <?php
 
-    <!--=================================
-     preloader -->
+    $titrePage = [
+        'fr' => [
+            'header' => 'header.php',
+            'footer' => 'footer.php',
 
+            'accueil' => 'accueil.php',
+            'a-propos' => 'a-propos.php',
+            'services' => 'services.php',
+            'realisations' => 'realisations.php',
+            'contact' => 'contact.php',
 
-    <?PHP if ($lang == "fr") {
-        include("header.php");
-    } else {
-        include("en/header-en.php");
-    } ?>
+            // Mettre les autres pages ici
+            'seo' => null
+        ],
+        'en' => [
+            'header' => 'en/header-en.php',
+            'footer' => 'en/footer-en.php',
 
+            'accueil' => 'en/accueil-en.php',
+            'a-propos' => 'en/a-propos-en.php',
+            'services' => 'en/services-en.php',
+            'realisations' => 'en/realisations-en.php',
+            'contact' => 'en/contact-en.php',
 
+            // Mettre les autres pages ici
+            'seo' => null
+        ]
+    ];
 
-    <?PHP
+    include($titrePage[$lang]['header']);
 
-    if ($page == "accueil") {
-        if ($lang == "fr") {
-            include("revolutionslider.php");
-            include("accueil.php");
-        } else {
-            include("en/revolutionslider-en.php");
-            include("en/accueil-en.php");
-        }
-    }
+    include($titrePage[$lang][$page]);
 
-    if ($page == "a-propos") {
-        if ($lang == "fr") {
-            include("a-propos.php");
-        } else {
-            include("en/a-propos-en.php");
-        }
-    }
-
-    if ($page == "services") {
-        if ($lang == "fr") {
-            include("services.php");
-        } else {
-            include("en/services-en.php");
-        }
-    }
-
-    if ($page == "realisations") {
-        if ($lang == "fr") {
-            include("realisations.php");
-        } else {
-            include("en/realisations-en.php");
-        }
-    }
-
-    if ($page == "contact") {
-        if ($lang == "fr") {
-            include("contact.php");
-        } else {
-            include("en/contact-en.php");
-        }
-    }
+    include($titrePage[$lang]['footer']);
 
     ?>
-
-    <?PHP if ($lang == "fr") {
-        include("footer.php");
-    } else {
-        include("en/footer-en.php");
-    } ?>
 
 
 </div>
@@ -149,13 +119,13 @@ include("lang/" . $lang . ".php");
  jquery -->
 
 <!-- plugins-jquery -->
-<script src="<?PHP echo $url ?>js/plugins-jquery.js"></script>
+<script src="<?= $url ?>js/plugins-jquery.js"></script>
 
 <!-- plugin_path -->
-<script>const plugin_path = '<?PHP echo $url ?>js/';</script>
+<script>const plugin_path = '<?= $url ?>js/';</script>
 
 <!-- custom -->
-<script src="<?PHP echo $url ?>js/custom.js"></script>
+<script src="<?= $url ?>js/custom.js"></script>
 
 </body>
 </html>

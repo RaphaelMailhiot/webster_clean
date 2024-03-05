@@ -7,7 +7,7 @@
             <div class="col-lg-12">
                 <div class="page-title-name">
                     <h1>À propos</h1>
-                    <p><?PHP echo $namebase ?></p>
+                    <p><?= $namebase ?></p>
                 </div>
             </div>
         </div>

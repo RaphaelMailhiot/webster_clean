@@ -25,7 +25,7 @@ AddOutputFilterByType DEFLATE application/x-javascript
 ErrorDocument 404 UrlDuSite
 
 RewriteRule ^$ index.php?lang=fr&page=accueil
-RewriteRule ^en$ index.php?lang=en&page=accueil
+RewriteRule ^en/$ index.php?lang=en&page=accueil
 
 RewriteRule ^a-propos$ index.php?lang=fr&page=a-propos
 RewriteRule ^en/about$ index.php?lang=en&page=a-propos

@@ -5,38 +5,38 @@
                 <div class="footer-useful-link footer-hedding">
                     <h6 class="text-white mb-30 mt-10 text-uppercase">Navigation</h6>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="<?= $url . $meta['accueil'][3] ?>">Home</a></li>
+                        <li><a href="<?= $url . $meta['a-propos'][3] ?>">About</a></li>
+                        <li><a href="<?= $url . $meta['services'][3] ?>">Services</a></li>
+                        <li><a href="<?= $url . $meta['realisations'][3] ?>">Achievements</a></li>
+                        <li><a href="<?= $url . $meta['contact'][3] ?>">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-6 sm-mb-30">
                 <div class="footer-useful-link footer-hedding">
-                    <h6 class="text-white mb-30 mt-10 text-uppercase">Useful Link</h6>
+                    <h6 class="text-white mb-30 mt-10 text-uppercase">Links</h6>
                     <ul>
-                        <li><a href="#">Create Account</a></li>
-                        <li><a href="#">Company Philosophy</a></li>
-                        <li><a href="#">Corporate Culture</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Client Management</a></li>
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                        <li><a href="#">Link4</a></li>
+                        <li><a href="#">Link5</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 xs-mb-30">
-                <h6 class="text-white mb-30 mt-10 text-uppercase">Contact Us</h6>
+                <h6 class="text-white mb-30 mt-10 text-uppercase">Contact</h6>
                 <ul class="addresss-info">
                     <li><i class="fa fa-map-marker"></i>
                         <p>Address: 17504 Carlton Cuevas Rd, Gulfport, MS, 39503</p></li>
-                    <li><i class="fa fa-phone"></i> <a href="tel:7042791249"> <span>+(704) 279-1249 </span> </a></li>
-                    <li><i class="fa fa-envelope-o"></i>Email: letstalk@webster.com</li>
+                    <li><i class="fa fa-phone"></i> <a href="tel:4503327577"><span>450 332-7577</span></a></li>
+                    <li><i class="fa fa-envelope-o"></i>Email: info@delisolft.ca</li>
                 </ul>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <h6 class="text-white mb-30 mt-10 text-uppercase">Subscribe to Our Newsletter</h6>
-                <p>Sign Up to our Newsletter to get the latest news and offers.</p>
+                <h6 class="text-white mb-30 mt-10 text-uppercase">S'inscrire à notre infolettre</h6>
+                <p>Incrinvez-vous à notre infolettre pour recevoir nos nouvelles et nos offres.</p>
                 <div class="footer-Newsletter">
                     <div id="mc_embed_signup_scroll">
                         <form action="php/mailchimp-action.php" method="POST" id="mc-embedded-subscribe-form"
@@ -66,12 +66,11 @@
         </div>
         <div class="footer-widget mt-20">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <p class="mt-15"> &copy;<?PHP echo $namebase ?> <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>
-                        | Tous Droits Réservés | <a href="https://delisoft.ca/" target="_blank">Conception Web
-                            Delisoft</a></p>
+                <div class="col-lg-8 col-md-6">
+                    <p class="mt-15"> &copy;<?PHP echo $namebase ?> <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear().toString())</script></span>
+                        | Tous Droits Réservés | <a href="https://delisoft.ca/" target="_blank">Web Design Delisoft</a></p>
                 </div>
-                <div class="col-lg-6 col-md-6 text-left text-md-right">
+                <div class="col-lg-4 col-md-6 text-end">
                     <div class="footer-widget-social">
                         <ul>
                             <li><a aria-label="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>

@@ -9,7 +9,7 @@
         <div class="topbar-call text-left">
           <ul>
             <li><i class="fa fa-envelope-o theme-color"></i> info@delisoft.ca</li>
-             <li><i class="fa fa-phone"></i> <a href="tel:+4503327577"> <span>450-332-7577</span></a></li>
+             <li><i class="fa fa-phone"></i> <a href="tel:+4503327577"> <span>450 332-7577</span></a></li>
           </ul>
         </div>
       </div>
@@ -29,10 +29,10 @@
 
 <!--=================================
  mega menu -->
- 
-<div class="menu">  
-  <div class="container"> 
-    <div class="row"> 
+
+<div class="menu">
+  <div class="container">
+    <div class="row">
      <div class="col-lg-12 col-md-12">
      <!-- menu start -->
        <nav id="menu" class="mega-menu">
@@ -41,28 +41,31 @@
         <!-- menu logo -->
         <ul class="menu-logo">
             <li>
-                <a href="<?= $url . $meta['accueil'][3] ?>"><img src="<?PHP echo $url ?>/images/favicon.ico" alt="logo"></a>
+                <a href="<?= $url . $meta['accueil'][3] ?>"><img src="<?= $url ?>/images/favicon.ico" alt="logo"></a>
             </li>
         </ul>
         <!-- menu links -->
-        <div class="menu-bar">
-         <ul class="menu-links">
-         <li <?php if ($_GET["page"] === "accueil"): ?> class="active" <?php endif;?>><a href="<?= $url . $meta['accueil'][3] ?>">Accueil</a></li>
-            <li <?php if ($_GET["page"] === "a-propos"): ?> class="active" <?php endif;?>><a href="#">A Propos<i class="fa fa-angle-down fa-indicator"></i></a>
-              <ul class="drop-down-multilevel left-side">
-                <li><a href="<?= $url . $meta['a-propos'][3] ?>">À Propos</a></li>
-                <li><a href="<?= $url . $meta['a-propos'][3] ?>#">Mettre une page</a></li>
-                <li><a href="<?= $url . $meta['a-propos'][3] ?>#">Mettre une page</a></li>
-              </ul>
-            </li>
-         <li <?php if ($_GET["page"] === "services"): ?> class="active" <?php endif;?>><a href="<?= $url . $meta['services'][3] ?>"</a></li>
-         <li <?php if ($_GET["page"] === "realisations"): ?> class="active" <?php endif;?>><a href="<?= $url . $meta['realisations'][3] ?>"</a></li>
-         <li <?php if ($_GET["page"] === "contact"): ?> class="active" <?php endif;?>><a href="<?= $url . $meta['contact'][3] ?>"</a></li>
+            <div class="menu-bar">
+             <ul class="menu-links">
 
-        </ul>
-        
-        </div>
-       </section>
+                 <li <?php if ($_GET["page"] === "accueil"): ?> class="active" <?php endif;?>><a href="<?= $url . $meta['accueil'][3] ?>">Accueil</a></li>
+                    <li <?php if ($_GET["page"] === "a-propos"): ?> class="active" <?php endif;?>><a href="#">À Propos<i class="fa fa-angle-down fa-indicator"></i></a>
+                      <ul class="drop-down-multilevel left-side">
+                        <li><a href="<?= $url . $meta['a-propos'][3] ?>">À Propos</a></li>
+                        <li><a href="<?= $url . $meta['a-propos'][3] ?>#">Mettre une page</a></li>
+                        <li><a href="<?= $url . $meta['a-propos'][3] ?>#">Mettre une page</a></li>
+                      </ul>
+                    </li>
+                 <li <?php if ($_GET["page"] === "services"): ?> class="active" <?php endif;?>><a href="<?= $url . $meta['services'][3] ?>">Services</a></li>
+                 <li <?php if ($_GET["page"] === "realisations"): ?> class="active" <?php endif;?>><a href="<?= $url . $meta['realisations'][3] ?>">Réalisations</a></li>
+                 <li <?php if ($_GET["page"] === "contact"): ?> class="active" <?php endif;?>><a href="<?= $url . $meta['contact'][3] ?>">Contact</a></li>
+
+                 <!--Permet de changer de langue-->
+                 <li><a href="<?= $meta[$page]['en'] ?>">EN</a></li>
+
+            </ul>
+            </div>
+          </section>
          </nav>
        </div>
      </div>

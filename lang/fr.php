@@ -11,27 +11,22 @@ $meta['accueil'][3] ="";
 $meta['a-propos'][0] ="À propos - $namebase";
 $meta['a-propos'][1] ="$descriptionbasefr";
 $meta['a-propos'][2] ="$keywordsbasefr, à propos,";
-$meta['a-propos'][3] ="a-propos/";
+$meta['a-propos'][3] ="a-propos";
 
 $meta['services'][0] ="Services - $namebase";
 $meta['services'][1] ="$descriptionbasefr";
 $meta['services'][2] ="$keywordsbasefr, services,";
-$meta['services'][3] ="nos-services/";
+$meta['services'][3] ="services";
 
 $meta['realisations'][0] ="Réalisations - $namebase";
 $meta['realisations'][1] ="$descriptionbasefr";
 $meta['realisations'][2] ="$keywordsbasefr, réalisations,";
-$meta['realisations'][3] ="nos-realisations/";
+$meta['realisations'][3] ="realisations";
 
 $meta['contact'][0] ="Contact - $namebase";
 $meta['contact'][1] ="Contactez un employé de notre équipe d'expert dès maintenant.";
 $meta['contact'][2] ="contacter, contact,";
-$meta['contact'][3] ="contactez-nous/";
-
-$meta['contact-send'][0] ="Message envoyé - $namebase";
-$meta['contact-send'][1] ="Contactez un employé de notre équipe d'expert dès maintenant.";
-$meta['contact-send'][2] ="contacter, contact,";
-$meta['contact-send'][3] ="contact-send/";
+$meta['contact'][3] ="contact";
 
 
 $province=$_GET['province'];
