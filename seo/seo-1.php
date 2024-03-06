@@ -224,8 +224,8 @@ $valueclean = str_replace('-', ' ', $value);
                     <h5 class="seo-h6"><?= $serviceclean ?> <?= $townclean ?></h5>
                     <div class="seo-h2 mt-10">APRÈS UNE<span class="theme-color"> EXTRACTION DENTAIRE</span></div>
                     <p>Mordez sur la compresse que nous vous avons remise pendant 30 minutes. Si le saignement persiste,
-                        recommencez avec une nouvelle compresse pendant encore 30 minutes. Un sac de thé imbibé d’eau
-                        peut être placé sur la plaie pendant 20 minutes. Le tanin qu’il contient créé un effet
+                        recommencez avec une nouvelle compresse durant encore 30 minutes. Un sac de thé imbibé d’eau
+                        peut être placé sur la plaie durant 20 minutes. Le tanin qu’il contient créé un effet
                         coagulant. S’il y a lieu, prendre vos médicaments tels que prescrits par le dentiste. Si votre
                         joue est gonflée, appliquez de la glace en évitant le contact direct avec la peau à raison de 15
                         minutes à toutes les heures.</p>

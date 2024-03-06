@@ -1,4 +1,4 @@
-<?PHP
+<?php
 
 $descriptionbasefr = "CeciEstLaDescriptionDeBase";
 $keywordsbasefr = "CeuxCiSontLesKeywordsDeBase";
@@ -37,14 +37,12 @@ $serviceclean = str_replace('-', ' ', $service);
 $valueclean = str_replace('-', ' ', $value);
 
 
-if ($page=="seo-1"){
-$titre ="SEO ".$town."- $namebase";
-$description ="SEO à ".$town." $namebase. $descriptionbasefr" ;
-$keywords = "$keywordsbasefr, $namebase".$town.",";
- }
-else {
-	
-$titre= $meta[$page][0];
-$description = $meta[$page][1];
-$keywords = $meta[$page][2];
+if ($page == "seo-1") {
+    $titre = "SEO " . $town . "- $namebase";
+    $description = "SEO à " . $town . " $namebase. $descriptionbasefr";
+    $keywords = "$keywordsbasefr, $namebase" . $town . ",";
+} else {
+    $titre = $meta[$page][0];
+    $description = $meta[$page][1];
+    $keywords = $meta[$page][2];
 }

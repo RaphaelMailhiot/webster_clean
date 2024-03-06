@@ -29,22 +29,20 @@ $meta['contact'][2] ="contacter, contact,";
 $meta['contact'][3] ="en/contact";
 
 
-$province=$_GET['province'];
-$town=$_GET['town'];
-$service=$_GET['service'];
+$province = $_GET['province'];
+$town = $_GET['town'];
+$service = $_GET['service'];
 $townclean = str_replace('-', ' ', $town);
 $serviceclean = str_replace('-', ' ', $service);
 $valueclean = str_replace('-', ' ', $value);
 
 
-if ($page=="seo-1-en"){
-$titre ="SEO ".$category."- $namebase";
-$description ="SEO at ".$category." $namebase. $descriptionbaseen";
-$keywords = "$keywordsbaseen, $namebase".$category.",";
- }
-else {
-	
-$titre= $meta[$page][0];
-$description = $meta[$page][1];
-$keywords = $meta[$page][2];
+if ($page == "seo-1-en") {
+    $titre = "SEO " . $category . "- $namebase";
+    $description = "SEO at " . $category . " $namebase. $descriptionbaseen";
+    $keywords = "$keywordsbaseen, $namebase" . $category . ",";
+} else {
+    $titre = $meta[$page][0];
+    $description = $meta[$page][1];
+    $keywords = $meta[$page][2];
 }
