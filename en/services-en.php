@@ -7,7 +7,7 @@
             <div class="col-lg-12">
                 <div class="page-title-name">
                     <h1>Services</h1>
-                    <p><?PHP echo $namebase ?></p>
+                    <p><?= $namebase ?></p>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
     <div class="side-background">
         <div class="col-lg-6 img-side img-left">
             <img class="h-100 w-100 object-fit-cover"
-                 src="<?PHP echo $url ?>images/services/ImageDuService.jpg"
+                 src="<?= $url ?>images/services/ImageDuService.jpg"
                  alt="AltDuService">
         </div>
     </div>
@@ -30,7 +30,7 @@
             <div class="col-lg-5 sm-mt-30">
                 <div class="shop-split-content">
                     <h2 class="mt-10">Titre</h2>
-                    <h6 class="theme-color"><?PHP echo $namebase ?></h6>
+                    <h6 class="theme-color"><?= $namebase ?></h6>
 
                     <p>UnParagraphe</p>
                     <ul class="list list-mark">
@@ -44,7 +44,7 @@
         <div class="row">
             <div class="col-lg-12 p-0">
                 <img class="w-100 object-fit-cover mh-400"
-                     src="<?PHP echo $url ?>images/services/ImageDuService.jpg"
+                     src="<?= $url ?>images/services/ImageDuService.jpg"
                      alt="AltDuService">
             </div>
         </div>
@@ -58,7 +58,7 @@
     <div class="side-background">
         <div class="col-lg-6 img-side img-right">
             <img class="h-100 w-100 object-fit-cover"
-                 src="<?PHP echo $url ?>images/services/ImageDuService.jpg"
+                 src="<?= $url ?>images/services/ImageDuService.jpg"
                  alt="AltDuService">
         </div>
     </div>
@@ -67,7 +67,7 @@
             <div class="col-lg-5 sm-mt-30">
                 <div class="shop-split-content">
                     <h2 class="mt-10">Titre</h2>
-                    <h6 class="theme-color"><?PHP echo $namebase ?></h6>
+                    <h6 class="theme-color"><?= $namebase ?></h6>
 
                     <p>UnParagraphe</p>
                     <ul class="list list-mark">
@@ -81,7 +81,7 @@
         <div class="row">
             <div class="col-lg-12 p-0">
                 <img class="w-100 object-fit-cover mx-400"
-                     src="<?PHP echo $url ?>images/services/ImageDuService.jpg"
+                     src="<?= $url ?>images/services/ImageDuService.jpg"
                      alt="AltDuService">
             </div>
         </div>
@@ -106,12 +106,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <img class="img-fluid full-width h-100 object-fit-cover d-none d-md-none d-lg-block" src="<?PHP echo $url ?>images/services/ImageDuService.jpg"
+                <img class="img-fluid full-width h-100 object-fit-cover d-none d-md-none d-lg-block" src="<?= $url ?>images/services/ImageDuService.jpg"
                      alt="AltDuService">
             </div>
             <div class="col-lg-6 align-self-center">
                 <div class="section-title">
-                    <h6 class="theme-color"><?PHP echo $namebase ?></h6>
+                    <h6 class="theme-color"><?= $namebase ?></h6>
                     <h2>TitreDeLaSection</h2>
                     <p>SousTitre</p>
                 </div>
@@ -121,10 +121,10 @@
                     <li>ElementDeLaListe</li>
                 </ul>
 
-                <a class="button" href="<?PHP echo $url ?>lien/">LeLien</a>
+                <a class="button" href="<?= $url ?>lien/">LeLien</a>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid full-width h-100 object-fit-cover d-block d-md-block d-lg-none" src="<?PHP echo $url ?>images/services/ImageDuService.jpg"
+                <img class="img-fluid full-width h-100 object-fit-cover d-block d-md-block d-lg-none" src="<?= $url ?>images/services/ImageDuService.jpg"
                      alt="AltDuService">
             </div>
         </div>
@@ -139,7 +139,7 @@
         <div class="row">
             <div class="col-lg-6 align-self-center">
                 <div class="section-title">
-                    <h6 class="theme-color"><?PHP echo $namebase ?></h6>
+                    <h6 class="theme-color"><?= $namebase ?></h6>
                     <h2>TitreDeLaSection</h2>
                     <p>SousTitre</p>
                 </div>
@@ -150,7 +150,7 @@
                 </ul>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid full-width h-100 object-fit-cover" src="<?PHP echo $url ?>images/services/ImageDuService.jpg"
+                <img class="img-fluid full-width h-100 object-fit-cover" src="<?= $url ?>images/services/ImageDuService.jpg"
                      alt="AltDuService">
             </div>
         </div>

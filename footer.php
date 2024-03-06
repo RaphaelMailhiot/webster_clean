@@ -67,7 +67,7 @@
         <div class="footer-widget mt-20">
             <div class="row">
                 <div class="col-lg-8 col-md-6">
-                    <p class="mt-15"> &copy;<?PHP echo $namebase ?> <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear().toString()))</script></span>
+                    <p class="mt-15"> &copy;<?= $namebase ?> <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear().toString()))</script></span>
                         | Tous Droits Réservés | <a href="https://delisoft.ca/" target="_blank">Conception Web Delisoft</a></p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-end">
