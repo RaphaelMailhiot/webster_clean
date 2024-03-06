@@ -23,7 +23,7 @@
             <div class="col-lg-12 col-md-12">
                 <div class="isotope full-screen columns-5 popup-gallery">
 
-                    <!--il faut mettre le nb de photo-->
+                    <!--il faut mettre le nb de photo à la place du "7"-->
                     <?php for ($row = 1; $row <= 7; $row++): ?>
                         <div class="grid-item">
                             <div class="portfolio-item">

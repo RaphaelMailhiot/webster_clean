@@ -2,10 +2,10 @@
 $page = $_GET["page"];
 $lang = $_GET["lang"];
 
-// Mettre l'URL du site
+// TODO Mettre l'URL du site
 $url = "https://z-test-raph-delisoft.temoignagesvideo.com/";
 
-// Mettre le nom du site
+// TODO Mettre le nom du site
 $namebase = "NomDeLaCompagnie";
 
 include("lang/" . $lang . ".php");
