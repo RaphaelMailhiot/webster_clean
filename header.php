@@ -8,18 +8,18 @@
       <div class="col-lg-6 col-md-6 xs-mb-10">
         <div class="topbar-call text-left">
           <ul>
-            <li><i class="fa fa-envelope-o theme-color"></i> info@delisoft.ca</li>
-             <li><i class="fa fa-phone"></i> <a href="tel:+4503327577"> <span>450 332-7577</span></a></li>
+            <li><i class="fa fa-envelope-o theme-color"></i> <a href="mailto:info@delisoft.ca">info@delisoft.ca</a></li>
+             <li><i class="fa fa-phone"></i> <a href="tel:4503327577"><span>450 332-7577</span></a></li>
           </ul>
         </div>
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="topbar-social text-end">
           <ul>
-            <li><a aria-label="Facebook" href="#"><span class="ti-facebook"></span></a></li>
-            <li><a aria-label="Instagram" href="#"><span class="ti-instagram"></span></a></li>
-            <li><a aria-label="Twitter" href="#"><span class="ti-twitter"></span></a></li>
-            <li><a aria-label="Linkedin" href="#"><span class="ti-linkedin"></span></a></li>
+            <li><a aria-label="Facebook" href="#" target="_blank"><span class="ti-facebook"></span></a></li>
+            <li><a aria-label="Instagram" href="#" target="_blank"><span class="ti-instagram"></span></a></li>
+            <li><a aria-label="Twitter" href="#" target="_blank"><span class="ti-twitter"></span></a></li>
+            <li><a aria-label="Linkedin" href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
           </ul>
         </div>
       </div>

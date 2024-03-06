@@ -73,10 +73,10 @@
                 <div class="col-lg-4 col-md-6 text-end">
                     <div class="footer-widget-social">
                         <ul>
-                            <li><a aria-label="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a aria-label="Instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a aria-label="Twitter" href="#"><i class="fa fa-twitter"></i> </a></li>
-                            <li><a aria-label="Linkedin" href="#"><i class="fa fa-linkedin"></i> </a></li>
+                            <li><a aria-label="Facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a aria-label="Instagram" href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a aria-label="Twitter" href="#" target="_blank"><i class="fa fa-twitter"></i> </a></li>
+                            <li><a aria-label="Linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i> </a></li>
                         </ul>
                     </div>
                 </div>
